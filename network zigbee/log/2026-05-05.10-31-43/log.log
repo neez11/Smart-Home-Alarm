@@ -1,0 +1,32 @@
+[2026-05-05 10:31:44] info: 	z2m: Logging to console, file (filename: log.log)
+[2026-05-05 10:31:44] info: 	z2m: Starting Zigbee2MQTT version 1.42.0 (commit #861cba6)
+[2026-05-05 10:31:44] info: 	z2m: Starting zigbee-herdsman (2.1.9)
+[2026-05-05 10:31:57] warning: 	zh:ezsp: 'ezsp' driver is deprecated and will only remain to provide support for older firmware (pre 7.4.x). Migration to 'ember' is recommended. If using Zigbee2MQTT see https://github.com/Koenkk/zigbee2mqtt/discussions/21462
+[2026-05-05 10:32:06] info: 	z2m: zigbee-herdsman started (resumed)
+[2026-05-05 10:32:06] info: 	z2m: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+[2026-05-05 10:32:06] info: 	z2m: front_door (0x449fdafffe750fcf): SNZB-04P - SONOFF Contact sensor (EndDevice)
+[2026-05-05 10:32:06] info: 	z2m: Currently 1 devices are joined.
+[2026-05-05 10:32:06] warning: 	z2m: `permit_join` set to  `true` in configuration.yaml.
+[2026-05-05 10:32:06] warning: 	z2m: Allowing new devices to join.
+[2026-05-05 10:32:06] warning: 	z2m: Set `permit_join` to `false` once you joined all devices.
+[2026-05-05 10:32:06] info: 	z2m: Zigbee: allowing new devices to join.
+[2026-05-05 10:32:07] info: 	z2m: Connecting to MQTT server at mqtt://localhost:1883
+[2026-05-05 10:32:19] info: 	z2m: Connected to MQTT server
+[2026-05-05 10:32:19] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'online'
+[2026-05-05 10:32:27] info: 	z2m: Started frontend on port 0.0.0.0:8080
+[2026-05-05 10:32:28] error: 	zh:ezsp:uart: --> Error: Error: {"sequence":0} after 4000ms
+[2026-05-05 10:32:28] error: 	zh:ezsp:uart: -!- break waiting (0)
+[2026-05-05 10:32:28] error: 	zh:ezsp:uart: Can't send DATA frame (7,2,0): 2f00010500
+[2026-05-05 10:32:28] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/config', payload '{"commit":"861cba6","coordinator":{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"},"log_level":"info","network":{"channel":11,"extendedPanID":221,"panID":6754},"permit_join":true,"version":"1.42.0"}'
+[2026-05-05 10:32:29] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"battery_low":false,"contact":true,"voltage":3100}'
+[2026-05-05 10:32:29] info: 	z2m: Zigbee2MQTT started!
+[2026-05-05 10:32:29] error: 	zh:ezsp:uart: --> Error: Error: Recv NAK frame
+[2026-05-05 10:32:29] error: 	zh:ezsp:uart: -!- break rewaiting (0)
+[2026-05-05 10:32:29] error: 	zh:ezsp:uart: Can't resend DATA frame (7,2,1): 2f00010500
+[2026-05-05 10:32:29] error: 	zh:ezsp:ezsp: Watchdog heartbeat timeout Error: Failure send nop:{"type":"Buffer","data":[47,0,1,5,0]}
+[2026-05-05 10:44:54] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'offline'
+[2026-05-05 10:44:54] info: 	z2m: Disconnecting from MQTT server
+[2026-05-05 10:44:54] info: 	z2m: Stopping zigbee-herdsman...
+[2026-05-05 10:44:55] info: 	zh:controller: Wrote coordinator backup to '/home/hemlarm/zigbee2mqtt/data/coordinator_backup.json'
+[2026-05-05 10:44:55] info: 	z2m: Stopped zigbee-herdsman
+[2026-05-05 10:44:55] info: 	z2m: Stopped Zigbee2MQTT

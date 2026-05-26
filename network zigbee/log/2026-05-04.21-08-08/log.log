@@ -1,0 +1,52 @@
+[2026-05-04 21:08:08] info: 	z2m: Logging to console, file (filename: log.log)
+[2026-05-04 21:08:08] info: 	z2m: Starting Zigbee2MQTT version 1.42.0 (commit #861cba6)
+[2026-05-04 21:08:08] info: 	z2m: Starting zigbee-herdsman (2.1.9)
+[2026-05-04 21:08:14] warning: 	zh:ezsp: 'ezsp' driver is deprecated and will only remain to provide support for older firmware (pre 7.4.x). Migration to 'ember' is recommended. If using Zigbee2MQTT see https://github.com/Koenkk/zigbee2mqtt/discussions/21462
+[2026-05-04 21:08:19] info: 	zh:controller: Wrote coordinator backup to '/home/hemlarm/zigbee2mqtt/data/coordinator_backup.json'
+[2026-05-04 21:08:20] info: 	z2m: zigbee-herdsman started (resumed)
+[2026-05-04 21:08:20] info: 	z2m: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+[2026-05-04 21:08:20] info: 	z2m: Currently 0 devices are joined.
+[2026-05-04 21:08:20] warning: 	z2m: `permit_join` set to  `true` in configuration.yaml.
+[2026-05-04 21:08:20] warning: 	z2m: Allowing new devices to join.
+[2026-05-04 21:08:20] warning: 	z2m: Set `permit_join` to `false` once you joined all devices.
+[2026-05-04 21:08:20] info: 	z2m: Zigbee: allowing new devices to join.
+[2026-05-04 21:08:20] info: 	z2m: Connecting to MQTT server at mqtt://localhost:1883
+[2026-05-04 21:08:24] info: 	z2m: Connected to MQTT server
+[2026-05-04 21:08:24] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'online'
+[2026-05-04 21:08:25] info: 	z2m: Started frontend on port 0.0.0.0:8080
+[2026-05-04 21:08:25] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/config', payload '{"commit":"861cba6","coordinator":{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"},"log_level":"info","network":{"channel":11,"extendedPanID":221,"panID":6754},"permit_join":true,"version":"1.42.0"}'
+[2026-05-04 21:08:25] info: 	z2m: Zigbee2MQTT started!
+[2026-05-04 21:27:10] info: 	z2m: Zigbee: disabling joining new devices.
+[2026-05-04 21:27:11] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":false},"status":"ok","transaction":"wzwoh-1"}'
+[2026-05-04 21:27:25] info: 	zh:controller: Interview for '0x449fdafffe750fcf' started
+[2026-05-04 21:27:25] info: 	z2m: Device '0x449fdafffe750fcf' joined
+[2026-05-04 21:27:25] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/log', payload '{"message":{"friendly_name":"0x449fdafffe750fcf"},"type":"device_connected"}'
+[2026-05-04 21:27:25] info: 	z2m: Starting interview of '0x449fdafffe750fcf'
+[2026-05-04 21:27:25] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/log', payload '{"message":"interview_started","meta":{"friendly_name":"0x449fdafffe750fcf"},"type":"pairing"}'
+[2026-05-04 21:27:25] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x449fdafffe750fcf","ieee_address":"0x449fdafffe750fcf"},"type":"device_joined"}'
+[2026-05-04 21:27:26] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x449fdafffe750fcf","ieee_address":"0x449fdafffe750fcf","status":"started"},"type":"device_interview"}'
+[2026-05-04 21:27:29] info: 	zh:controller: Succesfully interviewed '0x449fdafffe750fcf'
+[2026-05-04 21:27:29] info: 	z2m: Successfully interviewed '0x449fdafffe750fcf', device has successfully been paired
+[2026-05-04 21:27:29] info: 	z2m: Device '0x449fdafffe750fcf' is supported, identified as: SONOFF Contact sensor (SNZB-04P)
+[2026-05-04 21:27:29] info: 	z2m: Configuring '0x449fdafffe750fcf'
+[2026-05-04 21:27:30] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/log', payload '{"message":"interview_successful","meta":{"description":"Contact sensor","friendly_name":"0x449fdafffe750fcf","model":"SNZB-04P","supported":true,"vendor":"SONOFF"},"type":"pairing"}'
+[2026-05-04 21:27:30] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"definition":{"description":"Contact sensor","exposes":[{"access":1,"description":"Indicates whether the device is opened or closed","label":"Contact","name":"contact","property":"contact","type":"binary","value_off":true,"value_on":false},{"access":1,"category":"diagnostic","description":"Indicates whether the battery of the device is almost empty","label":"Battery low","name":"battery_low","property":"battery_low","type":"binary","value_off":false,"value_on":true},{"access":5,"description":"Tamper-proof status","label":"Tamper","name":"tamper","property":"tamper","type":"binary","value_off":false,"value_on":true},{"access":5,"category":"diagnostic","description":"Remaining battery in %","label":"Battery","name":"battery","property":"battery","type":"numeric","unit":"%","value_max":100,"value_min":0},{"access":5,"category":"diagnostic","description":"Reported battery voltage in millivolts","label":"Voltage","name":"voltage","property":"voltage","type":"numeric","unit":"mV"},{"access":1,"category":"diagnostic","description":"Link quality (signal strength)","label":"Linkquality","name":"linkquality","property":"linkquality","type":"numeric","unit":"lqi","value_max":255,"value_min":0}],"model":"SNZB-04P","options":[],"supports_ota":true,"vendor":"SONOFF"},"friendly_name":"0x449fdafffe750fcf","ieee_address":"0x449fdafffe750fcf","status":"successful","supported":true},"type":"device_interview"}'
+[2026-05-04 21:27:30] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/0x449fdafffe750fcf', payload '{"battery":100,"linkquality":255}'
+[2026-05-04 21:27:31] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/0x449fdafffe750fcf', payload '{"battery":100,"linkquality":255,"voltage":3100}'
+[2026-05-04 21:27:31] info: 	z2m: Successfully configured '0x449fdafffe750fcf'
+[2026-05-04 21:27:52] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/0x449fdafffe750fcf', payload ''
+[2026-05-04 21:27:52] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"linkquality":252,"voltage":3100}'
+[2026-05-04 21:27:52] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/device/rename', payload '{"data":{"from":"0x449fdafffe750fcf","homeassistant_rename":false,"to":"front_door"},"status":"ok","transaction":"wzwoh-2"}'
+[2026-05-04 21:28:47] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"battery_low":false,"contact":true,"linkquality":255,"voltage":3100}'
+[2026-05-04 21:28:48] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"battery_low":false,"contact":false,"linkquality":248,"voltage":3100}'
+[2026-05-04 21:28:50] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"battery_low":false,"contact":true,"linkquality":255,"voltage":3100}'
+[2026-05-04 21:28:53] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"battery_low":false,"contact":false,"linkquality":248,"voltage":3100}'
+[2026-05-04 21:28:55] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/front_door', payload '{"battery":100,"battery_low":false,"contact":true,"linkquality":255,"voltage":3100}'
+[2026-05-04 21:32:22] info: 	z2m: Zigbee: allowing new devices to join.
+[2026-05-04 21:32:22] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":true},"status":"ok","transaction":"wzwoh-3"}'
+[2026-05-04 21:37:37] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload 'offline'
+[2026-05-04 21:37:37] info: 	z2m: Disconnecting from MQTT server
+[2026-05-04 21:37:37] info: 	z2m: Stopping zigbee-herdsman...
+[2026-05-04 21:37:38] info: 	zh:controller: Wrote coordinator backup to '/home/hemlarm/zigbee2mqtt/data/coordinator_backup.json'
+[2026-05-04 21:37:38] info: 	z2m: Stopped zigbee-herdsman
+[2026-05-04 21:37:38] info: 	z2m: Stopped Zigbee2MQTT

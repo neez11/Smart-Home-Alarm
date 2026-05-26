@@ -1,0 +1,15 @@
+{
+    "0x449fdafffe750fcf": {
+        "battery": 100,
+        "voltage": 3000,
+        "contact": true,
+        "battery_low": false,
+        "update": {
+            "state": "idle",
+            "installed_version": 8704,
+            "latest_version": 8704
+        },
+        "update_available": false,
+        "tamper": true
+    }
+}

@@ -1,0 +1,15 @@
+homeassistant: false
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost:1883
+serial:
+  port: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+  adapter: ezsp
+frontend:
+  enabled: true
+  host: 0.0.0.0
+  port: 8080
+devices:
+  '0x449fdafffe750fcf':
+    friendly_name: front_door

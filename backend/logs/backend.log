@@ -1,0 +1,1354 @@
+2026-04-26 16:35:02,160 | INFO | smart_alarm | Camera started successfully
+2026-04-26 16:35:02,500 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-04-26 16:35:02,532 | INFO | smart_alarm | PirAlarmController started
+2026-04-26 16:36:05,171 | INFO | smart_alarm | System armed
+2026-04-26 16:36:09,738 | INFO | smart_alarm | Motion detected
+2026-04-26 16:36:09,767 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:36:13,243 | INFO | smart_alarm | Motion ended
+2026-04-26 16:36:17,227 | INFO | smart_alarm | Motion detected
+2026-04-26 16:36:17,242 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:36:26,031 | INFO | smart_alarm | Motion ended
+2026-04-26 16:36:29,658 | INFO | smart_alarm | Motion detected
+2026-04-26 16:36:29,685 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:36:33,179 | INFO | smart_alarm | Motion ended
+2026-04-26 16:36:36,596 | INFO | smart_alarm | Motion detected
+2026-04-26 16:36:36,610 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:36:38,743 | INFO | smart_alarm | Motion ended
+2026-04-26 16:36:41,947 | INFO | smart_alarm | Motion detected
+2026-04-26 16:36:41,990 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:37:28,018 | INFO | smart_alarm | Motion ended
+2026-04-26 16:37:30,811 | INFO | smart_alarm | Motion detected
+2026-04-26 16:37:30,835 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:37:54,404 | INFO | smart_alarm | Motion ended
+2026-04-26 16:37:59,170 | INFO | smart_alarm | Motion detected
+2026-04-26 16:37:59,181 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:38:06,026 | INFO | smart_alarm | Motion ended
+2026-04-26 16:38:08,344 | INFO | smart_alarm | Motion detected
+2026-04-26 16:38:08,379 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-26 16:38:27,262 | INFO | smart_alarm | Motion ended
+2026-04-26 16:38:28,714 | INFO | smart_alarm | Alarm reset
+2026-04-26 16:38:30,345 | INFO | smart_alarm | Testing outputs
+2026-04-26 16:38:32,473 | INFO | smart_alarm | Testing outputs
+2026-04-26 16:38:34,348 | INFO | smart_alarm | Testing outputs
+2026-04-26 16:38:36,024 | INFO | smart_alarm | System armed
+2026-04-26 16:38:36,891 | INFO | smart_alarm | System disarmed
+2026-04-26 16:38:39,629 | INFO | smart_alarm | Alarm reset
+2026-04-26 16:39:19,992 | INFO | smart_alarm | PirAlarmController stopped
+2026-04-26 16:39:20,000 | INFO | smart_alarm | Backend stopped
+2026-04-28 09:41:21,121 | INFO | smart_alarm | Camera started successfully
+2026-04-28 09:41:21,618 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-04-28 09:41:21,642 | INFO | smart_alarm | PirAlarmController started
+2026-04-28 09:42:44,246 | INFO | smart_alarm | Motion detected
+2026-04-28 09:42:47,895 | INFO | smart_alarm | Motion ended
+2026-04-28 09:42:50,939 | INFO | smart_alarm | Motion detected
+2026-04-28 09:42:59,261 | INFO | smart_alarm | Motion ended
+2026-04-28 09:43:01,953 | INFO | smart_alarm | Motion detected
+2026-04-28 09:43:15,734 | INFO | smart_alarm | Motion ended
+2026-04-28 09:43:18,815 | INFO | smart_alarm | Motion detected
+2026-04-28 09:43:21,693 | INFO | smart_alarm | Motion ended
+2026-04-28 09:43:24,543 | INFO | smart_alarm | Motion detected
+2026-04-28 09:43:37,068 | INFO | smart_alarm | Motion ended
+2026-04-28 09:43:42,175 | INFO | smart_alarm | Motion detected
+2026-04-28 09:43:47,549 | INFO | smart_alarm | Motion ended
+2026-04-28 09:44:41,484 | INFO | smart_alarm | Motion detected
+2026-04-28 09:44:44,973 | INFO | smart_alarm | Motion ended
+2026-04-28 09:51:27,058 | ERROR | smart_alarm | Error in PIR loop: deque mutated during iteration
+Traceback (most recent call last):
+  File "/home/hemlarm/project1/smart_alarm/pir_sensor.py", line 135, in _loop
+    motion_now = self.pir.motion_detected
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 348, in is_active
+    return self.value > self.threshold
+           ^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 602, in value
+    return super().value
+           ^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 323, in value
+    return self._queue.value
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/mixins.py", line 571, in value
+    return self.average(self.queue)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/statistics.py", line 488, in mean
+    T, total, n = _sum(data)
+                  ~~~~^^^^^^
+  File "/usr/lib/python3.13/statistics.py", line 197, in _sum
+    for n, d in map(_exact_ratio, values):
+                ~~~^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: deque mutated during iteration
+2026-04-28 09:51:37,092 | INFO | smart_alarm | Motion detected
+2026-04-28 09:51:40,266 | INFO | smart_alarm | Motion ended
+2026-04-28 09:51:50,354 | INFO | smart_alarm | Motion detected
+2026-04-28 09:51:53,733 | INFO | smart_alarm | Motion ended
+2026-04-28 09:52:01,662 | INFO | smart_alarm | Motion detected
+2026-04-28 09:52:04,986 | INFO | smart_alarm | Motion ended
+2026-04-28 09:52:21,313 | INFO | smart_alarm | Motion detected
+2026-04-28 09:52:24,693 | INFO | smart_alarm | Motion ended
+2026-04-28 09:52:29,326 | INFO | smart_alarm | Motion detected
+2026-04-28 09:52:32,649 | INFO | smart_alarm | Motion ended
+2026-04-28 09:53:13,645 | INFO | smart_alarm | Motion detected
+2026-04-28 09:53:17,193 | INFO | smart_alarm | Motion ended
+2026-04-28 09:53:44,923 | INFO | smart_alarm | Motion detected
+2026-04-28 09:53:50,583 | INFO | smart_alarm | Motion ended
+2026-04-28 09:54:02,654 | INFO | smart_alarm | Motion detected
+2026-04-28 09:54:05,992 | INFO | smart_alarm | Motion ended
+2026-04-28 09:54:28,603 | INFO | smart_alarm | Motion detected
+2026-04-28 09:54:34,084 | INFO | smart_alarm | Motion ended
+2026-04-28 09:55:38,649 | ERROR | smart_alarm | Error in PIR loop: deque mutated during iteration
+Traceback (most recent call last):
+  File "/home/hemlarm/project1/smart_alarm/pir_sensor.py", line 135, in _loop
+    motion_now = self.pir.motion_detected
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 348, in is_active
+    return self.value > self.threshold
+           ^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 602, in value
+    return super().value
+           ^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 323, in value
+    return self._queue.value
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/mixins.py", line 571, in value
+    return self.average(self.queue)
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/statistics.py", line 488, in mean
+    T, total, n = _sum(data)
+                  ~~~~^^^^^^
+  File "/usr/lib/python3.13/statistics.py", line 197, in _sum
+    for n, d in map(_exact_ratio, values):
+                ~~~^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: deque mutated during iteration
+2026-04-28 09:56:35,943 | INFO | smart_alarm | Motion detected
+2026-04-28 09:56:39,336 | INFO | smart_alarm | Motion ended
+2026-04-28 10:02:30,334 | INFO | smart_alarm | PirAlarmController stopped
+2026-04-28 10:02:30,345 | INFO | smart_alarm | Backend stopped
+2026-04-28 10:59:50,370 | INFO | smart_alarm | Camera started successfully
+2026-04-28 10:59:51,204 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-04-28 10:59:51,262 | INFO | smart_alarm | PirAlarmController started
+2026-04-28 11:00:35,092 | INFO | smart_alarm | Motion detected
+2026-04-28 11:00:47,919 | INFO | smart_alarm | Motion ended
+2026-04-28 11:00:51,511 | INFO | smart_alarm | Motion detected
+2026-04-28 11:00:57,172 | INFO | smart_alarm | Motion ended
+2026-04-28 11:01:00,776 | INFO | smart_alarm | Motion detected
+2026-04-28 11:01:07,427 | INFO | smart_alarm | Motion ended
+2026-04-28 11:01:11,026 | INFO | smart_alarm | Motion detected
+2026-04-28 11:01:20,213 | INFO | smart_alarm | Motion ended
+2026-04-28 11:06:15,607 | INFO | smart_alarm | Motion detected
+2026-04-28 11:06:19,216 | INFO | smart_alarm | Motion ended
+2026-04-28 11:06:23,275 | INFO | smart_alarm | Motion detected
+2026-04-28 11:06:26,851 | INFO | smart_alarm | Motion ended
+2026-04-28 11:06:39,179 | INFO | smart_alarm | Motion detected
+2026-04-28 11:06:42,769 | INFO | smart_alarm | Motion ended
+2026-04-28 11:06:47,418 | INFO | smart_alarm | Motion detected
+2026-04-28 11:06:51,028 | INFO | smart_alarm | Motion ended
+2026-04-28 11:06:53,594 | INFO | smart_alarm | Motion detected
+2026-04-28 11:06:53,683 | INFO | smart_alarm | System armed
+2026-04-28 11:06:56,861 | INFO | smart_alarm | System armed
+2026-04-28 11:07:00,376 | INFO | smart_alarm | System armed
+2026-04-28 11:07:01,873 | INFO | smart_alarm | Motion ended
+2026-04-28 11:07:03,962 | INFO | smart_alarm | Motion detected
+2026-04-28 11:07:04,038 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-28 11:07:14,307 | INFO | smart_alarm | Motion ended
+2026-04-28 11:07:18,150 | INFO | smart_alarm | Motion detected
+2026-04-28 11:07:18,173 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-28 11:07:23,882 | INFO | smart_alarm | Motion ended
+2026-04-28 11:07:25,847 | INFO | smart_alarm | Motion detected
+2026-04-28 11:07:25,886 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-04-28 11:07:31,315 | INFO | smart_alarm | Motion ended
+2026-04-28 11:07:40,498 | INFO | smart_alarm | System disarmed
+2026-04-28 11:07:42,972 | INFO | smart_alarm | Motion detected
+2026-04-28 11:07:46,549 | INFO | smart_alarm | Motion ended
+2026-04-28 11:07:53,769 | INFO | smart_alarm | Motion detected
+2026-04-28 11:07:57,443 | INFO | smart_alarm | Motion ended
+2026-04-28 11:08:02,132 | INFO | smart_alarm | Motion detected
+2026-04-28 11:08:15,872 | INFO | smart_alarm | Motion ended
+2026-04-28 11:08:21,000 | INFO | smart_alarm | Motion detected
+2026-04-28 11:08:32,230 | INFO | smart_alarm | Motion ended
+2026-04-28 11:08:34,809 | INFO | smart_alarm | Motion detected
+2026-04-28 11:08:42,063 | INFO | smart_alarm | Motion ended
+2026-04-28 11:08:44,676 | INFO | smart_alarm | Motion detected
+2026-04-28 11:09:19,473 | INFO | smart_alarm | Motion ended
+2026-04-28 11:09:23,065 | INFO | smart_alarm | Motion detected
+2026-04-28 11:09:26,209 | INFO | smart_alarm | Motion ended
+2026-04-28 11:09:30,865 | INFO | smart_alarm | Motion detected
+2026-04-28 11:09:34,012 | INFO | smart_alarm | Motion ended
+2026-04-28 11:09:43,742 | INFO | smart_alarm | Motion detected
+2026-04-28 11:09:46,812 | INFO | smart_alarm | Motion ended
+2026-04-28 11:09:55,101 | INFO | smart_alarm | Motion detected
+2026-04-28 11:09:58,702 | INFO | smart_alarm | Motion ended
+2026-04-28 11:10:03,791 | INFO | smart_alarm | Motion detected
+2026-04-28 11:10:07,447 | INFO | smart_alarm | Motion ended
+2026-04-28 11:10:13,610 | INFO | smart_alarm | Motion detected
+2026-04-28 11:10:19,244 | INFO | smart_alarm | Motion ended
+2026-04-28 11:11:16,374 | INFO | smart_alarm | Motion detected
+2026-04-28 11:11:19,973 | INFO | smart_alarm | Motion ended
+2026-04-28 11:11:25,110 | INFO | smart_alarm | Motion detected
+2026-04-28 11:11:28,677 | INFO | smart_alarm | Motion ended
+2026-04-28 11:11:39,933 | INFO | smart_alarm | Motion detected
+2026-04-28 11:11:43,053 | INFO | smart_alarm | Motion ended
+2026-04-28 11:12:04,045 | INFO | smart_alarm | Motion detected
+2026-04-28 11:12:07,676 | INFO | smart_alarm | Motion ended
+2026-04-28 11:12:52,723 | INFO | smart_alarm | Motion detected
+2026-04-28 11:12:54,866 | INFO | smart_alarm | Motion ended
+2026-04-28 11:13:41,009 | INFO | smart_alarm | Motion detected
+2026-04-28 11:13:44,625 | INFO | smart_alarm | Motion ended
+2026-04-28 11:13:49,245 | INFO | smart_alarm | Motion detected
+2026-04-28 11:13:52,397 | INFO | smart_alarm | Motion ended
+2026-04-28 11:14:38,396 | INFO | smart_alarm | Motion detected
+2026-04-28 11:14:46,118 | INFO | smart_alarm | Motion ended
+2026-04-28 11:14:49,229 | INFO | smart_alarm | Motion detected
+2026-04-28 11:14:52,317 | INFO | smart_alarm | Motion ended
+2026-04-28 11:15:04,680 | INFO | smart_alarm | Motion detected
+2026-04-28 11:15:07,790 | INFO | smart_alarm | Motion ended
+2026-04-28 11:15:13,416 | INFO | smart_alarm | Motion detected
+2026-04-28 11:15:17,021 | INFO | smart_alarm | Motion ended
+2026-04-28 11:15:21,657 | INFO | smart_alarm | Motion detected
+2026-04-28 11:15:25,279 | INFO | smart_alarm | Motion ended
+2026-04-28 11:15:30,450 | INFO | smart_alarm | Motion detected
+2026-04-28 11:15:33,564 | INFO | smart_alarm | Motion ended
+2026-04-28 11:15:38,683 | INFO | smart_alarm | Motion detected
+2026-04-28 11:15:42,291 | INFO | smart_alarm | Motion ended
+2026-04-28 11:16:21,701 | INFO | smart_alarm | Motion detected
+2026-04-28 11:16:25,347 | INFO | smart_alarm | Motion ended
+2026-04-28 11:17:17,592 | INFO | smart_alarm | Motion detected
+2026-04-28 11:17:21,166 | INFO | smart_alarm | Motion ended
+2026-04-28 11:17:38,071 | INFO | smart_alarm | Motion detected
+2026-04-28 11:17:41,214 | INFO | smart_alarm | Motion ended
+2026-04-28 11:18:05,309 | INFO | smart_alarm | Motion detected
+2026-04-28 11:18:08,915 | INFO | smart_alarm | Motion ended
+2026-04-28 11:18:32,891 | INFO | smart_alarm | Motion detected
+2026-04-28 11:18:36,484 | INFO | smart_alarm | Motion ended
+2026-04-28 11:18:51,299 | INFO | smart_alarm | Motion detected
+2026-04-28 11:18:54,901 | INFO | smart_alarm | Motion ended
+2026-04-28 11:19:01,005 | INFO | smart_alarm | Motion detected
+2026-04-28 11:19:11,216 | INFO | smart_alarm | Motion ended
+2026-04-28 11:20:49,973 | INFO | smart_alarm | Motion detected
+2026-04-28 11:20:53,576 | INFO | smart_alarm | Motion ended
+2026-04-28 11:21:57,670 | INFO | smart_alarm | PirAlarmController stopped
+2026-04-28 11:21:57,777 | INFO | smart_alarm | Backend stopped
+2026-05-03 13:59:34,898 | INFO | smart_alarm | Camera started successfully
+2026-05-03 14:02:36,899 | INFO | smart_alarm | Camera started successfully
+2026-05-03 14:12:24,553 | INFO | smart_alarm | Camera started successfully
+2026-05-03 14:12:24,849 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 14:12:24,874 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 14:12:25,017 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 14:12:25,028 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 14:28:36,244 | INFO | smart_alarm | Motion detected
+2026-05-03 14:28:39,780 | INFO | smart_alarm | Motion ended
+2026-05-03 15:01:41,041 | ERROR | smart_alarm | MQTT door listener error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/hemlarm/project1/smart_alarm/zigbee_door_listener.py", line 39, in _on_message
+    data = json.loads(msg.payload.decode())
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-05-03 15:03:45,676 | INFO | smart_alarm | Front door opened
+2026-05-03 15:03:46,259 | INFO | smart_alarm | Front door closed
+2026-05-03 15:03:50,291 | INFO | smart_alarm | Front door opened
+2026-05-03 15:03:51,229 | INFO | smart_alarm | Front door closed
+2026-05-03 15:03:52,250 | INFO | smart_alarm | Front door opened
+2026-05-03 15:03:52,908 | INFO | smart_alarm | Front door closed
+2026-05-03 15:03:55,307 | INFO | smart_alarm | Front door opened
+2026-05-03 15:03:57,974 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:00,741 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:04,478 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:06,630 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:07,714 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:09,785 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:10,286 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:10,787 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:10,882 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:11,115 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:19,635 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:39,214 | INFO | smart_alarm | System armed
+2026-05-03 15:04:41,506 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:41,532 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:04:43,083 | INFO | smart_alarm | System disarmed
+2026-05-03 15:04:43,496 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:43,701 | INFO | smart_alarm | Front door opened
+2026-05-03 15:04:51,627 | INFO | smart_alarm | Front door closed
+2026-05-03 15:04:57,827 | INFO | smart_alarm | Front door opened
+2026-05-03 15:05:03,248 | INFO | smart_alarm | Front door closed
+2026-05-03 15:05:34,059 | INFO | smart_alarm | Motion detected
+2026-05-03 15:05:37,317 | INFO | smart_alarm | System armed
+2026-05-03 15:05:37,583 | INFO | smart_alarm | Motion ended
+2026-05-03 15:05:38,985 | INFO | smart_alarm | Front door opened
+2026-05-03 15:05:39,021 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:05:39,564 | INFO | smart_alarm | Front door closed
+2026-05-03 15:05:43,624 | INFO | smart_alarm | Motion detected
+2026-05-03 15:05:43,643 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:05:47,170 | INFO | smart_alarm | Motion ended
+2026-05-03 15:05:49,690 | INFO | smart_alarm | Motion detected
+2026-05-03 15:05:49,703 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:05:53,231 | INFO | smart_alarm | Motion ended
+2026-05-03 15:05:58,149 | INFO | smart_alarm | System disarmed
+2026-05-03 15:05:59,767 | INFO | smart_alarm | Motion detected
+2026-05-03 15:06:02,280 | INFO | smart_alarm | Motion ended
+2026-05-03 15:06:03,170 | INFO | smart_alarm | System armed
+2026-05-03 15:06:04,648 | INFO | smart_alarm | Front door opened
+2026-05-03 15:06:04,672 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:06:08,382 | INFO | smart_alarm | Front door closed
+2026-05-03 15:06:15,205 | INFO | smart_alarm | System disarmed
+2026-05-03 15:06:18,872 | INFO | smart_alarm | Motion detected
+2026-05-03 15:06:23,398 | INFO | smart_alarm | Motion ended
+2026-05-03 15:09:24,483 | INFO | smart_alarm | Front door opened
+2026-05-03 15:09:31,327 | INFO | smart_alarm | Front door closed
+2026-05-03 15:09:35,942 | INFO | smart_alarm | System armed
+2026-05-03 15:09:39,047 | INFO | smart_alarm | Front door opened
+2026-05-03 15:09:39,056 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:09:40,480 | INFO | smart_alarm | Front door closed
+2026-05-03 15:09:42,482 | INFO | smart_alarm | System disarmed
+2026-05-03 15:10:00,292 | INFO | smart_alarm | Front door opened
+2026-05-03 15:10:03,472 | INFO | smart_alarm | Front door closed
+2026-05-03 15:10:07,435 | INFO | smart_alarm | Front door opened
+2026-05-03 15:10:07,952 | INFO | smart_alarm | Front door closed
+2026-05-03 15:12:25,399 | INFO | smart_alarm | Front door opened
+2026-05-03 15:12:27,057 | INFO | smart_alarm | Front door closed
+2026-05-03 15:15:40,821 | INFO | smart_alarm | System armed
+2026-05-03 15:15:44,024 | INFO | smart_alarm | Front door opened
+2026-05-03 15:15:44,032 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:15:49,993 | INFO | smart_alarm | Motion detected
+2026-05-03 15:15:50,061 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:15:53,790 | INFO | smart_alarm | Motion ended
+2026-05-03 15:16:07,572 | INFO | smart_alarm | Motion detected
+2026-05-03 15:16:07,596 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:16:11,282 | INFO | smart_alarm | Motion ended
+2026-05-03 15:16:29,533 | INFO | smart_alarm | Motion detected
+2026-05-03 15:16:29,544 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:16:33,663 | INFO | smart_alarm | Motion ended
+2026-05-03 15:16:36,094 | INFO | smart_alarm | System disarmed
+2026-05-03 15:16:40,706 | INFO | smart_alarm | Motion detected
+2026-05-03 15:16:43,754 | INFO | smart_alarm | Motion ended
+2026-05-03 15:16:44,040 | INFO | smart_alarm | System armed
+2026-05-03 15:16:48,472 | INFO | smart_alarm | Front door closed
+2026-05-03 15:16:51,604 | INFO | smart_alarm | System disarmed
+2026-05-03 15:16:52,388 | INFO | smart_alarm | System armed
+2026-05-03 15:16:54,421 | INFO | smart_alarm | Front door opened
+2026-05-03 15:16:54,427 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:16:55,222 | INFO | smart_alarm | Front door closed
+2026-05-03 15:17:04,851 | INFO | smart_alarm | Motion detected
+2026-05-03 15:17:04,875 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:17:08,408 | INFO | smart_alarm | Motion ended
+2026-05-03 15:17:13,952 | INFO | smart_alarm | Motion detected
+2026-05-03 15:17:13,962 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:17:15,558 | INFO | smart_alarm | System disarmed
+2026-05-03 15:17:16,991 | INFO | smart_alarm | Motion ended
+2026-05-03 15:17:20,013 | INFO | smart_alarm | Motion detected
+2026-05-03 15:17:28,374 | INFO | smart_alarm | System disarmed
+2026-05-03 15:17:28,966 | INFO | smart_alarm | System armed
+2026-05-03 15:17:29,555 | INFO | smart_alarm | Motion ended
+2026-05-03 15:17:37,928 | INFO | smart_alarm | Front door opened
+2026-05-03 15:17:37,973 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:17:38,590 | INFO | smart_alarm | Front door closed
+2026-05-03 15:17:54,177 | INFO | smart_alarm | Motion detected
+2026-05-03 15:17:54,207 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:17:57,768 | INFO | smart_alarm | Motion ended
+2026-05-03 15:18:00,285 | INFO | smart_alarm | Motion detected
+2026-05-03 15:18:00,297 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:18:04,350 | INFO | smart_alarm | Motion ended
+2026-05-03 15:18:06,046 | INFO | smart_alarm | Alarm reset
+2026-05-03 15:18:07,427 | INFO | smart_alarm | System disarmed
+2026-05-03 15:18:07,727 | INFO | smart_alarm | System disarmed
+2026-05-03 15:18:08,031 | INFO | smart_alarm | System disarmed
+2026-05-03 15:18:08,169 | INFO | smart_alarm | System disarmed
+2026-05-03 15:18:14,896 | INFO | smart_alarm | Motion detected
+2026-05-03 15:18:18,412 | INFO | smart_alarm | Motion ended
+2026-05-03 15:18:24,940 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 15:18:24,949 | INFO | smart_alarm | Backend stopped
+2026-05-03 15:18:43,358 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:18:43,687 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:18:43,707 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:18:43,802 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:18:43,805 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:18:53,087 | INFO | smart_alarm | System armed
+2026-05-03 15:18:56,746 | INFO | smart_alarm | Motion detected
+2026-05-03 15:18:56,757 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:19:00,299 | INFO | smart_alarm | Motion ended
+2026-05-03 15:19:10,042 | INFO | smart_alarm | Alarm reset
+2026-05-03 15:19:10,849 | INFO | smart_alarm | Motion detected
+2026-05-03 15:19:10,856 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:19:14,388 | INFO | smart_alarm | Motion ended
+2026-05-03 15:19:16,116 | INFO | smart_alarm | System disarmed
+2026-05-03 15:19:22,443 | INFO | smart_alarm | Motion detected
+2026-05-03 15:19:25,959 | INFO | smart_alarm | Motion ended
+2026-05-03 15:19:42,027 | INFO | smart_alarm | Motion detected
+2026-05-03 15:19:52,579 | INFO | smart_alarm | Motion ended
+2026-05-03 15:21:23,440 | INFO | smart_alarm | Motion detected
+2026-05-03 15:21:26,963 | INFO | smart_alarm | Motion ended
+2026-05-03 15:21:30,985 | INFO | smart_alarm | Motion detected
+2026-05-03 15:21:33,497 | INFO | smart_alarm | Motion ended
+2026-05-03 15:21:45,515 | INFO | smart_alarm | Front door opened
+2026-05-03 15:21:46,509 | INFO | smart_alarm | Front door closed
+2026-05-03 15:21:48,560 | INFO | smart_alarm | Motion detected
+2026-05-03 15:21:54,095 | INFO | smart_alarm | Motion ended
+2026-05-03 15:21:55,725 | INFO | smart_alarm | System disarmed
+2026-05-03 15:21:57,677 | INFO | smart_alarm | System armed
+2026-05-03 15:22:02,281 | INFO | smart_alarm | Front door opened
+2026-05-03 15:22:02,319 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:22:02,861 | INFO | smart_alarm | Front door closed
+2026-05-03 15:22:04,521 | INFO | smart_alarm | System disarmed
+2026-05-03 15:22:08,663 | INFO | smart_alarm | System armed
+2026-05-03 15:22:09,874 | INFO | smart_alarm | Front door opened
+2026-05-03 15:22:09,893 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:22:11,240 | INFO | smart_alarm | Front door closed
+2026-05-03 15:22:12,231 | INFO | smart_alarm | System disarmed
+2026-05-03 15:29:34,009 | INFO | smart_alarm | System armed
+2026-05-03 15:29:45,530 | INFO | smart_alarm | System disarmed
+2026-05-03 15:32:25,296 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 15:32:25,301 | INFO | smart_alarm | Backend stopped
+2026-05-03 15:32:40,338 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:32:40,672 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:32:40,697 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:32:41,017 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:32:41,019 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:32:51,744 | INFO | smart_alarm | Motion detected
+2026-05-03 15:32:56,779 | INFO | smart_alarm | Motion ended
+2026-05-03 15:33:07,817 | INFO | smart_alarm | Motion detected
+2026-05-03 15:33:12,334 | INFO | smart_alarm | Motion ended
+2026-05-03 15:33:14,343 | INFO | smart_alarm | Motion detected
+2026-05-03 15:33:20,363 | INFO | smart_alarm | Motion ended
+2026-05-03 15:33:39,406 | INFO | smart_alarm | Motion detected
+2026-05-03 15:33:45,429 | INFO | smart_alarm | Motion ended
+2026-05-03 15:33:53,507 | INFO | smart_alarm | System armed
+2026-05-03 15:33:53,539 | INFO | smart_alarm | System armed
+2026-05-03 15:33:53,672 | INFO | smart_alarm | System armed
+2026-05-03 15:33:53,723 | INFO | smart_alarm | System armed
+2026-05-03 15:33:57,121 | INFO | smart_alarm | System disarmed
+2026-05-03 15:33:58,537 | INFO | smart_alarm | System armed
+2026-05-03 15:34:08,225 | INFO | smart_alarm | Front door opened
+2026-05-03 15:34:08,234 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:34:08,437 | INFO | smart_alarm | Front door closed
+2026-05-03 15:34:12,812 | INFO | smart_alarm | System disarmed
+2026-05-03 15:33:08,888 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:33:09,771 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:33:09,817 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:33:28,234 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:33:28,554 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:33:28,578 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:33:29,133 | ERROR | smart_alarm | Error in PIR loop: MotionSensor is closed or uninitialized
+Traceback (most recent call last):
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/devices.py", line 584, in _check_open
+    super()._check_open()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/devices.py", line 213, in _check_open
+    raise DeviceClosed(
+        f"{self.__class__.__name__} is closed or uninitialized")
+gpiozero.exc.DeviceClosed: MotionSensor is closed or uninitialized
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hemlarm/project1/smart_alarm/pir_sensor.py", line 155, in _loop
+    motion_now = self._read_motion_safe()
+  File "/home/hemlarm/project1/smart_alarm/pir_sensor.py", line 144, in _read_motion_safe
+    return self.pir.motion_detected
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 348, in is_active
+    return self.value > self.threshold
+           ^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 602, in value
+    return super().value
+           ^^^^^^^^^^^^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/input_devices.py", line 322, in value
+    self._check_open()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/hemlarm/project1/venv/lib/python3.13/site-packages/gpiozero/devices.py", line 587, in _check_open
+    raise GPIODeviceClosed(str(e))
+gpiozero.exc.GPIODeviceClosed: MotionSensor is closed or uninitialized
+2026-05-03 15:33:45,598 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:33:46,354 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:33:46,393 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:34:04,134 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:34:04,449 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:34:04,461 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:34:04,616 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:34:04,622 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:34:25,811 | INFO | smart_alarm | Motion detected
+2026-05-03 15:38:08,234 | INFO | smart_alarm | Motion ended
+2026-05-03 15:38:11,753 | INFO | smart_alarm | Motion detected
+2026-05-03 15:38:15,265 | INFO | smart_alarm | Motion ended
+2026-05-03 15:38:21,291 | INFO | smart_alarm | Motion detected
+2026-05-03 15:38:23,825 | INFO | smart_alarm | Motion ended
+2026-05-03 15:38:27,814 | INFO | smart_alarm | System armed
+2026-05-03 15:38:31,356 | INFO | smart_alarm | Motion detected
+2026-05-03 15:38:31,363 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:38:33,454 | INFO | smart_alarm | Motion ended
+2026-05-03 15:39:02,598 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:02,602 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:02,671 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:02,821 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:10,542 | INFO | smart_alarm | Motion detected
+2026-05-03 15:39:13,055 | INFO | smart_alarm | Motion ended
+2026-05-03 15:39:18,302 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:22,444 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:22,453 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:22,730 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:23,161 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:24,280 | INFO | smart_alarm | System armed
+2026-05-03 15:39:25,145 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:26,090 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:26,696 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:28,058 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:28,056 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:28,117 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:28,579 | INFO | smart_alarm | Testing outputs
+2026-05-03 15:39:28,725 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:30,492 | INFO | smart_alarm | System disarmed
+2026-05-03 15:39:46,280 | INFO | smart_alarm | Front door opened
+2026-05-03 15:39:49,456 | INFO | smart_alarm | Front door closed
+2026-05-03 15:41:35,390 | INFO | smart_alarm | Motion detected
+2026-05-03 15:41:38,904 | INFO | smart_alarm | Motion ended
+2026-05-03 15:42:07,413 | INFO | smart_alarm | System disarmed
+2026-05-03 15:42:09,517 | INFO | smart_alarm | System armed
+2026-05-03 15:49:24,266 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:49:24,445 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:49:24,454 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:49:24,549 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:49:24,557 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:49:46,107 | INFO | smart_alarm | System armed
+2026-05-03 15:49:55,537 | INFO | smart_alarm | Motion detected
+2026-05-03 15:49:55,546 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:49:59,560 | INFO | smart_alarm | Motion ended
+2026-05-03 15:50:19,449 | INFO | smart_alarm | Alarm reset
+2026-05-03 15:50:20,466 | INFO | smart_alarm | System disarmed
+2026-05-03 15:54:03,392 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:54:03,577 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:54:03,583 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:54:03,803 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:54:03,811 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:54:26,131 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 15:54:26,135 | INFO | smart_alarm | Backend stopped
+2026-05-03 15:55:33,127 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:55:33,467 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:55:33,489 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:55:33,610 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:55:33,632 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:55:45,555 | INFO | smart_alarm | Motion detected
+2026-05-03 15:55:50,077 | INFO | smart_alarm | Motion ended
+2026-05-03 15:55:51,768 | INFO | smart_alarm | System armed
+2026-05-03 15:55:56,104 | INFO | smart_alarm | Motion detected
+2026-05-03 15:55:56,114 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:55:59,762 | INFO | smart_alarm | Motion ended
+2026-05-03 15:56:03,787 | INFO | smart_alarm | Motion detected
+2026-05-03 15:56:03,795 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:56:07,371 | INFO | smart_alarm | Motion ended
+2026-05-03 15:56:14,577 | INFO | smart_alarm | Motion detected
+2026-05-03 15:56:14,588 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:56:16,524 | INFO | smart_alarm | System disarmed
+2026-05-03 15:56:18,113 | INFO | smart_alarm | Motion ended
+2026-05-03 15:56:56,575 | INFO | smart_alarm | System armed
+2026-05-03 15:57:04,214 | INFO | smart_alarm | Front door opened
+2026-05-03 15:57:04,224 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:57:04,365 | INFO | smart_alarm | Front door closed
+2026-05-03 15:57:04,751 | INFO | smart_alarm | Front door opened
+2026-05-03 15:57:05,002 | INFO | smart_alarm | Front door closed
+2026-05-03 15:57:05,935 | INFO | smart_alarm | System disarmed
+2026-05-03 15:57:07,520 | INFO | smart_alarm | Front door opened
+2026-05-03 15:57:09,830 | INFO | smart_alarm | Front door closed
+2026-05-03 15:57:52,022 | INFO | smart_alarm | Motion detected
+2026-05-03 15:57:53,177 | INFO | smart_alarm | System armed
+2026-05-03 15:57:55,542 | INFO | smart_alarm | Motion ended
+2026-05-03 15:58:04,583 | INFO | smart_alarm | Motion detected
+2026-05-03 15:58:04,589 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:58:08,103 | INFO | smart_alarm | Motion ended
+2026-05-03 15:58:21,528 | INFO | smart_alarm | Alarm reset
+2026-05-03 15:58:22,805 | INFO | smart_alarm | System armed
+2026-05-03 15:58:28,065 | INFO | smart_alarm | Front door opened
+2026-05-03 15:58:28,081 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:58:28,781 | INFO | smart_alarm | Front door closed
+2026-05-03 15:58:44,764 | INFO | smart_alarm | Alarm reset
+2026-05-03 15:58:53,317 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 15:58:53,321 | INFO | smart_alarm | Backend stopped
+2026-05-03 15:59:06,056 | INFO | smart_alarm | Camera started successfully
+2026-05-03 15:59:06,363 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 15:59:06,390 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 15:59:06,599 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 15:59:06,612 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 15:59:11,711 | INFO | smart_alarm | System armed
+2026-05-03 15:59:17,162 | INFO | smart_alarm | Front door opened
+2026-05-03 15:59:17,169 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:59:19,703 | INFO | smart_alarm | Front door closed
+2026-05-03 15:59:28,505 | INFO | smart_alarm | Motion detected
+2026-05-03 15:59:28,532 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:59:31,576 | INFO | smart_alarm | Motion ended
+2026-05-03 15:59:36,626 | INFO | smart_alarm | Motion detected
+2026-05-03 15:59:36,636 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:59:37,056 | INFO | smart_alarm | Alarm reset
+2026-05-03 15:59:40,170 | INFO | smart_alarm | Motion ended
+2026-05-03 15:59:44,192 | INFO | smart_alarm | Motion detected
+2026-05-03 15:59:44,198 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 15:59:47,711 | INFO | smart_alarm | Motion ended
+2026-05-03 15:59:48,657 | INFO | smart_alarm | System disarmed
+2026-05-03 15:59:49,886 | INFO | smart_alarm | System armed
+2026-05-03 15:59:52,601 | INFO | smart_alarm | Front door opened
+2026-05-03 15:59:52,616 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 15:59:53,144 | INFO | smart_alarm | Front door closed
+2026-05-03 15:59:53,733 | INFO | smart_alarm | System armed
+2026-05-03 15:59:56,682 | INFO | smart_alarm | System armed
+2026-05-03 15:59:59,890 | INFO | smart_alarm | Front door opened
+2026-05-03 15:59:59,901 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 16:00:11,336 | INFO | smart_alarm | Motion detected
+2026-05-03 16:00:11,347 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 16:00:13,877 | INFO | smart_alarm | Motion ended
+2026-05-03 16:00:26,001 | INFO | smart_alarm | Alarm reset
+2026-05-03 16:00:28,407 | INFO | smart_alarm | System disarmed
+2026-05-03 16:02:30,516 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 16:02:30,522 | INFO | smart_alarm | Backend stopped
+2026-05-03 16:13:25,508 | INFO | smart_alarm | Camera started successfully
+2026-05-03 16:13:25,803 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 16:13:25,818 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 16:13:25,931 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 16:13:25,937 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 16:15:25,086 | INFO | smart_alarm | System armed
+2026-05-03 16:15:27,770 | INFO | smart_alarm | Front door opened
+2026-05-03 16:15:27,780 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 16:15:29,565 | INFO | smart_alarm | Front door closed
+2026-05-03 16:15:59,760 | INFO | smart_alarm | System disarmed
+2026-05-03 16:17:02,628 | INFO | smart_alarm | System armed
+2026-05-03 16:17:06,930 | INFO | smart_alarm | Front door opened
+2026-05-03 16:17:06,937 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 16:17:18,193 | INFO | smart_alarm | Front door closed
+2026-05-03 16:17:38,869 | INFO | smart_alarm | System disarmed
+2026-05-03 16:26:02,610 | INFO | smart_alarm | Motion detected
+2026-05-03 16:26:06,123 | INFO | smart_alarm | Motion ended
+2026-05-03 16:36:15,152 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 17:09:28,546 | INFO | smart_alarm | Camera started successfully
+2026-05-03 17:09:28,857 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 17:09:28,876 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 17:09:29,094 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 17:09:29,097 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 17:10:05,431 | INFO | smart_alarm | System armed
+2026-05-03 17:10:16,075 | INFO | smart_alarm | Motion detected
+2026-05-03 17:10:16,083 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:10:19,617 | INFO | smart_alarm | Motion ended
+2026-05-03 17:10:33,722 | INFO | smart_alarm | System disarmed
+2026-05-03 17:10:35,125 | INFO | smart_alarm | System armed
+2026-05-03 17:10:38,908 | INFO | smart_alarm | Front door opened
+2026-05-03 17:10:38,917 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 17:10:43,708 | INFO | smart_alarm | Front door closed
+2026-05-03 17:10:48,026 | INFO | smart_alarm | Alarm reset
+2026-05-03 17:20:00,222 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 17:20:00,229 | INFO | smart_alarm | Backend stopped
+2026-05-03 17:20:32,250 | INFO | smart_alarm | Camera started successfully
+2026-05-03 17:20:32,551 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 17:20:32,572 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 17:20:32,667 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 17:20:32,674 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 17:21:25,310 | INFO | smart_alarm | Motion detected
+2026-05-03 17:21:27,837 | INFO | smart_alarm | Motion ended
+2026-05-03 17:21:55,051 | INFO | smart_alarm | Motion detected
+2026-05-03 17:21:59,071 | INFO | smart_alarm | Motion ended
+2026-05-03 17:22:24,678 | INFO | smart_alarm | Motion detected
+2026-05-03 17:22:28,195 | INFO | smart_alarm | Motion ended
+2026-05-03 17:22:51,711 | INFO | smart_alarm | System armed
+2026-05-03 17:23:00,848 | INFO | smart_alarm | Motion detected
+2026-05-03 17:23:00,861 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:23:04,915 | INFO | smart_alarm | Motion ended
+2026-05-03 17:23:34,467 | INFO | smart_alarm | System disarmed
+2026-05-03 17:23:51,035 | INFO | smart_alarm | System armed
+2026-05-03 17:23:56,194 | INFO | smart_alarm | Motion detected
+2026-05-03 17:23:56,328 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:23:59,859 | INFO | smart_alarm | Motion ended
+2026-05-03 17:24:03,585 | INFO | smart_alarm | Front door opened
+2026-05-03 17:24:05,243 | INFO | smart_alarm | Front door closed
+2026-05-03 17:24:14,522 | INFO | smart_alarm | System disarmed
+2026-05-03 17:24:29,249 | INFO | smart_alarm | System disarmed
+2026-05-03 17:25:33,199 | INFO | smart_alarm | Motion detected
+2026-05-03 17:25:36,741 | INFO | smart_alarm | Motion ended
+2026-05-03 17:26:08,874 | INFO | smart_alarm | Front door opened
+2026-05-03 17:26:08,956 | INFO | smart_alarm | Front door closed
+2026-05-03 17:26:12,290 | INFO | smart_alarm | Front door opened
+2026-05-03 17:26:13,609 | INFO | smart_alarm | Front door closed
+2026-05-03 17:26:15,893 | INFO | smart_alarm | Front door opened
+2026-05-03 17:26:17,605 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:22,458 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:23,715 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:25,122 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:25,862 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:27,158 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:28,032 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:50,908 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:51,623 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:52,572 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:53,370 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:55,713 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:56,384 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:58,610 | INFO | smart_alarm | Front door opened
+2026-05-03 17:27:59,515 | INFO | smart_alarm | Front door closed
+2026-05-03 17:27:59,878 | INFO | smart_alarm | Front door opened
+2026-05-03 17:28:02,804 | INFO | smart_alarm | Front door closed
+2026-05-03 17:28:03,938 | INFO | smart_alarm | Front door opened
+2026-05-03 17:28:04,542 | INFO | smart_alarm | Front door closed
+2026-05-03 17:29:48,312 | INFO | smart_alarm | Motion detected
+2026-05-03 17:29:51,637 | INFO | smart_alarm | Motion ended
+2026-05-03 17:30:23,867 | INFO | smart_alarm | Motion detected
+2026-05-03 17:30:29,454 | INFO | smart_alarm | Motion ended
+2026-05-03 17:30:34,971 | INFO | smart_alarm | Motion detected
+2026-05-03 17:30:37,980 | INFO | smart_alarm | Motion ended
+2026-05-03 17:32:26,730 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 17:32:26,734 | INFO | smart_alarm | Backend stopped
+2026-05-03 17:32:42,020 | INFO | smart_alarm | Camera started successfully
+2026-05-03 17:32:42,299 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 17:32:42,338 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 17:32:42,454 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 17:32:42,456 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 17:32:50,163 | INFO | smart_alarm | Motion detected
+2026-05-03 17:32:53,880 | INFO | smart_alarm | Motion ended
+2026-05-03 17:33:40,800 | INFO | smart_alarm | Motion detected
+2026-05-03 17:33:44,410 | INFO | smart_alarm | Motion ended
+2026-05-03 17:33:48,819 | INFO | smart_alarm | Motion detected
+2026-05-03 17:34:01,880 | INFO | smart_alarm | Motion ended
+2026-05-03 17:34:04,535 | INFO | smart_alarm | Motion detected
+2026-05-03 17:34:08,240 | INFO | smart_alarm | Motion ended
+2026-05-03 17:34:23,551 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 17:34:23,555 | INFO | smart_alarm | Backend stopped
+2026-05-03 17:34:39,491 | INFO | smart_alarm | Camera started successfully
+2026-05-03 17:34:39,791 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 17:34:39,818 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 17:34:39,963 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 17:34:39,969 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 17:34:44,998 | INFO | smart_alarm | Motion detected
+2026-05-03 17:34:48,520 | INFO | smart_alarm | Motion ended
+2026-05-03 17:35:01,587 | INFO | smart_alarm | Motion detected
+2026-05-03 17:35:05,130 | INFO | smart_alarm | Motion ended
+2026-05-03 17:35:17,297 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 17:35:17,309 | INFO | smart_alarm | Backend stopped
+2026-05-03 17:42:43,028 | INFO | smart_alarm | Camera started successfully
+2026-05-03 17:42:43,331 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 17:42:43,361 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 17:42:43,532 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 17:42:43,545 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 17:42:47,819 | INFO | smart_alarm | System armed
+2026-05-03 17:42:48,927 | INFO | smart_alarm | Motion detected
+2026-05-03 17:42:48,942 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:42:57,874 | INFO | smart_alarm | System disarmed
+2026-05-03 17:42:59,057 | INFO | smart_alarm | Motion ended
+2026-05-03 17:43:03,434 | INFO | smart_alarm | System armed
+2026-05-03 17:43:03,589 | INFO | smart_alarm | Motion detected
+2026-05-03 17:43:03,615 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:43:05,500 | INFO | smart_alarm | System disarmed
+2026-05-03 17:43:07,169 | INFO | smart_alarm | Motion ended
+2026-05-03 17:43:09,675 | INFO | smart_alarm | System armed
+2026-05-03 17:43:12,920 | INFO | smart_alarm | Motion detected
+2026-05-03 17:43:12,934 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:43:19,101 | INFO | smart_alarm | Motion ended
+2026-05-03 17:43:21,619 | INFO | smart_alarm | Motion detected
+2026-05-03 17:43:21,629 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:43:26,717 | INFO | smart_alarm | Motion ended
+2026-05-03 17:43:28,739 | INFO | smart_alarm | Motion detected
+2026-05-03 17:43:28,745 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:43:56,449 | INFO | smart_alarm | Motion ended
+2026-05-03 17:43:58,474 | INFO | smart_alarm | Motion detected
+2026-05-03 17:43:58,484 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:44:01,522 | INFO | smart_alarm | Motion ended
+2026-05-03 17:44:07,326 | INFO | smart_alarm | Motion detected
+2026-05-03 17:44:07,344 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:44:08,682 | INFO | smart_alarm | System disarmed
+2026-05-03 17:44:10,525 | INFO | smart_alarm | Motion ended
+2026-05-03 17:44:13,012 | INFO | smart_alarm | System armed
+2026-05-03 17:44:20,095 | INFO | smart_alarm | Motion detected
+2026-05-03 17:44:20,124 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:44:34,325 | INFO | smart_alarm | Motion ended
+2026-05-03 17:44:40,403 | INFO | smart_alarm | Motion detected
+2026-05-03 17:44:40,420 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:44:42,378 | INFO | smart_alarm | System disarmed
+2026-05-03 17:44:45,594 | INFO | smart_alarm | System armed
+2026-05-03 17:44:48,894 | INFO | smart_alarm | Front door opened
+2026-05-03 17:44:48,904 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-03 17:44:52,009 | INFO | smart_alarm | Motion ended
+2026-05-03 17:44:54,534 | INFO | smart_alarm | Motion detected
+2026-05-03 17:44:54,548 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-03 17:44:57,488 | INFO | smart_alarm | System disarmed
+2026-05-03 17:45:02,366 | INFO | smart_alarm | Front door closed
+2026-05-03 17:45:03,590 | INFO | smart_alarm | Motion ended
+2026-05-03 17:45:06,605 | INFO | smart_alarm | Motion detected
+2026-05-03 17:45:11,624 | INFO | smart_alarm | Motion ended
+2026-05-03 17:45:20,674 | INFO | smart_alarm | Motion detected
+2026-05-03 17:45:27,768 | INFO | smart_alarm | Motion ended
+2026-05-03 17:45:33,314 | INFO | smart_alarm | Motion detected
+2026-05-03 17:45:40,855 | INFO | smart_alarm | Motion ended
+2026-05-03 17:45:45,893 | INFO | smart_alarm | Motion detected
+2026-05-03 17:45:49,469 | INFO | smart_alarm | Motion ended
+2026-05-03 17:46:11,683 | INFO | smart_alarm | Motion detected
+2026-05-03 17:46:19,249 | INFO | smart_alarm | Motion ended
+2026-05-03 17:46:22,782 | INFO | smart_alarm | Motion detected
+2026-05-03 17:46:29,851 | INFO | smart_alarm | Motion ended
+2026-05-03 17:46:33,378 | INFO | smart_alarm | Motion detected
+2026-05-03 17:46:40,446 | INFO | smart_alarm | Motion ended
+2026-05-03 17:46:43,465 | INFO | smart_alarm | Motion detected
+2026-05-03 17:46:49,515 | INFO | smart_alarm | Motion ended
+2026-05-03 17:47:09,793 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 17:47:09,801 | INFO | smart_alarm | Backend stopped
+2026-05-03 18:00:47,013 | INFO | smart_alarm | Camera started successfully
+2026-05-03 18:00:47,297 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-03 18:00:47,329 | INFO | smart_alarm | PirAlarmController started
+2026-05-03 18:00:47,428 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-03 18:00:47,437 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-03 18:01:56,512 | INFO | smart_alarm | Motion detected
+2026-05-03 18:02:18,262 | INFO | smart_alarm | Motion ended
+2026-05-03 18:02:21,958 | INFO | smart_alarm | Motion detected
+2026-05-03 18:02:25,536 | INFO | smart_alarm | Motion ended
+2026-05-03 18:02:37,299 | INFO | smart_alarm | Motion detected
+2026-05-03 18:02:41,370 | INFO | smart_alarm | Motion ended
+2026-05-03 18:02:59,486 | INFO | smart_alarm | Motion detected
+2026-05-03 18:03:04,006 | INFO | smart_alarm | Motion ended
+2026-05-03 18:03:06,535 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-03 18:03:06,548 | INFO | smart_alarm | Backend stopped
+2026-05-04 09:51:37,406 | INFO | smart_alarm | Camera started successfully
+2026-05-04 09:51:38,086 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 09:51:38,133 | INFO | smart_alarm | Motion detected
+2026-05-04 09:51:38,146 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 09:51:39,129 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 09:51:39,523 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 09:51:49,287 | INFO | smart_alarm | Motion ended
+2026-05-04 09:51:56,107 | INFO | smart_alarm | Motion detected
+2026-05-04 09:52:34,726 | INFO | smart_alarm | Motion ended
+2026-05-04 09:52:36,444 | INFO | smart_alarm | Motion detected
+2026-05-04 09:52:41,653 | INFO | smart_alarm | Motion ended
+2026-05-04 09:54:26,816 | INFO | smart_alarm | Motion detected
+2026-05-04 09:54:29,866 | INFO | smart_alarm | Motion ended
+2026-05-04 09:54:32,892 | INFO | smart_alarm | Motion detected
+2026-05-04 09:54:35,924 | INFO | smart_alarm | Motion ended
+2026-05-04 09:55:05,004 | INFO | smart_alarm | Motion detected
+2026-05-04 09:55:26,727 | INFO | smart_alarm | Motion ended
+2026-05-04 09:55:42,794 | INFO | smart_alarm | Motion detected
+2026-05-04 09:55:46,310 | INFO | smart_alarm | Motion ended
+2026-05-04 09:55:52,324 | INFO | smart_alarm | Motion detected
+2026-05-04 09:56:04,360 | INFO | smart_alarm | Motion ended
+2026-05-04 09:56:06,210 | INFO | smart_alarm | System armed
+2026-05-04 09:56:11,398 | INFO | smart_alarm | Motion detected
+2026-05-04 09:56:11,413 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 09:56:16,217 | INFO | smart_alarm | System disarmed
+2026-05-04 09:56:17,435 | INFO | smart_alarm | Motion ended
+2026-05-04 09:56:22,448 | INFO | smart_alarm | Motion detected
+2026-05-04 09:56:25,963 | INFO | smart_alarm | Motion ended
+2026-05-04 09:56:35,011 | INFO | smart_alarm | Motion detected
+2026-05-04 09:56:38,533 | INFO | smart_alarm | Motion ended
+2026-05-04 09:57:13,135 | INFO | smart_alarm | Motion detected
+2026-05-04 09:57:16,650 | INFO | smart_alarm | Motion ended
+2026-05-04 09:57:48,277 | INFO | smart_alarm | Motion detected
+2026-05-04 09:57:57,796 | INFO | smart_alarm | Motion ended
+2026-05-04 09:58:02,815 | INFO | smart_alarm | Motion detected
+2026-05-04 09:58:06,332 | INFO | smart_alarm | Motion ended
+2026-05-04 10:09:53,664 | INFO | smart_alarm | Motion detected
+2026-05-04 10:09:57,180 | INFO | smart_alarm | Motion ended
+2026-05-04 10:10:14,238 | INFO | smart_alarm | Motion detected
+2026-05-04 10:10:17,754 | INFO | smart_alarm | Motion ended
+2026-05-04 10:10:29,287 | INFO | smart_alarm | Motion detected
+2026-05-04 10:10:32,300 | INFO | smart_alarm | Motion ended
+2026-05-04 10:10:37,320 | INFO | smart_alarm | Motion detected
+2026-05-04 10:10:40,847 | INFO | smart_alarm | Motion ended
+2026-05-04 10:10:51,888 | INFO | smart_alarm | Motion detected
+2026-05-04 10:10:55,401 | INFO | smart_alarm | Motion ended
+2026-05-04 10:11:29,969 | INFO | smart_alarm | Motion detected
+2026-05-04 10:11:35,487 | INFO | smart_alarm | Motion ended
+2026-05-04 10:11:42,509 | INFO | smart_alarm | Motion detected
+2026-05-04 10:11:46,023 | INFO | smart_alarm | Motion ended
+2026-05-04 10:11:58,560 | INFO | smart_alarm | Motion detected
+2026-05-04 10:12:02,076 | INFO | smart_alarm | Motion ended
+2026-05-04 10:32:27,792 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 10:32:27,796 | INFO | smart_alarm | Backend stopped
+2026-05-04 10:32:52,710 | INFO | smart_alarm | Camera started successfully
+2026-05-04 10:32:52,985 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 10:32:53,010 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 10:32:53,227 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 10:32:53,237 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 10:59:38,110 | INFO | smart_alarm | Motion detected
+2026-05-04 10:59:41,619 | INFO | smart_alarm | Motion ended
+2026-05-04 11:07:08,496 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 11:07:08,507 | INFO | smart_alarm | Backend stopped
+2026-05-04 11:33:05,869 | INFO | smart_alarm | Camera started successfully
+2026-05-04 11:33:06,151 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 11:33:06,167 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 11:33:06,678 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 11:33:06,698 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 11:34:03,854 | INFO | smart_alarm | System armed
+2026-05-04 11:35:12,449 | INFO | smart_alarm | Motion detected
+2026-05-04 11:35:12,466 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 11:35:17,995 | INFO | smart_alarm | Motion ended
+2026-05-04 11:35:20,703 | INFO | smart_alarm | System disarmed
+2026-05-04 11:35:28,190 | INFO | smart_alarm | Motion detected
+2026-05-04 11:35:31,709 | INFO | smart_alarm | Motion ended
+2026-05-04 11:35:37,223 | INFO | smart_alarm | Motion detected
+2026-05-04 11:35:40,749 | INFO | smart_alarm | Motion ended
+2026-05-04 11:35:47,790 | INFO | smart_alarm | Motion detected
+2026-05-04 11:35:51,301 | INFO | smart_alarm | Motion ended
+2026-05-04 11:35:54,828 | INFO | smart_alarm | System armed
+2026-05-04 11:35:56,315 | INFO | smart_alarm | Motion detected
+2026-05-04 11:35:56,330 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 11:35:59,339 | INFO | smart_alarm | Motion ended
+2026-05-04 11:36:00,367 | INFO | smart_alarm | System disarmed
+2026-05-04 11:36:07,867 | INFO | smart_alarm | Motion detected
+2026-05-04 11:36:11,402 | INFO | smart_alarm | Motion ended
+2026-05-04 11:36:18,919 | INFO | smart_alarm | Motion detected
+2026-05-04 11:36:22,439 | INFO | smart_alarm | Motion ended
+2026-05-04 11:36:31,465 | INFO | smart_alarm | Motion detected
+2026-05-04 11:36:34,977 | INFO | smart_alarm | Motion ended
+2026-05-04 11:37:38,100 | INFO | smart_alarm | Motion detected
+2026-05-04 11:37:42,112 | INFO | smart_alarm | Motion ended
+2026-05-04 11:40:49,489 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 11:40:49,493 | INFO | smart_alarm | Backend stopped
+2026-05-04 11:41:10,479 | INFO | smart_alarm | Camera started successfully
+2026-05-04 11:41:10,759 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 11:41:10,779 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 11:41:10,865 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 11:41:10,882 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 11:41:20,295 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 11:41:20,310 | INFO | smart_alarm | Backend stopped
+2026-05-04 12:10:00,265 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-04 12:10:00,578 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 12:10:00,595 | INFO | smart_alarm | Motion detected
+2026-05-04 12:10:00,596 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 12:10:00,809 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 12:10:00,816 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 12:10:08,119 | INFO | smart_alarm | Motion ended
+2026-05-04 12:10:11,642 | INFO | smart_alarm | Motion detected
+2026-05-04 12:10:23,170 | INFO | smart_alarm | Motion ended
+2026-05-04 12:10:27,195 | INFO | smart_alarm | Motion detected
+2026-05-04 12:10:27,832 | INFO | smart_alarm | System armed
+2026-05-04 12:10:30,706 | INFO | smart_alarm | Motion ended
+2026-05-04 12:10:32,714 | INFO | smart_alarm | Motion detected
+2026-05-04 12:10:32,730 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:10:36,252 | INFO | smart_alarm | Motion ended
+2026-05-04 12:10:44,808 | INFO | smart_alarm | Motion detected
+2026-05-04 12:10:44,814 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:10:47,825 | INFO | smart_alarm | Motion ended
+2026-05-04 12:10:50,343 | INFO | smart_alarm | Motion detected
+2026-05-04 12:10:50,358 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:10:55,192 | INFO | smart_alarm | Alarm reset
+2026-05-04 12:11:19,950 | INFO | smart_alarm | Motion ended
+2026-05-04 12:11:25,465 | INFO | smart_alarm | Motion detected
+2026-05-04 12:11:25,471 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:11:32,507 | INFO | smart_alarm | Motion ended
+2026-05-04 12:11:36,025 | INFO | smart_alarm | Motion detected
+2026-05-04 12:11:36,037 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:11:37,055 | INFO | smart_alarm | System disarmed
+2026-05-04 12:11:39,554 | INFO | smart_alarm | Motion ended
+2026-05-04 12:11:42,573 | INFO | smart_alarm | Motion detected
+2026-05-04 12:11:58,628 | INFO | smart_alarm | Motion ended
+2026-05-04 12:12:02,147 | INFO | smart_alarm | Motion detected
+2026-05-04 12:12:07,662 | INFO | smart_alarm | Motion ended
+2026-05-04 12:12:11,170 | INFO | smart_alarm | Motion detected
+2026-05-04 12:12:14,178 | INFO | smart_alarm | Motion ended
+2026-05-04 12:12:26,213 | INFO | smart_alarm | Motion detected
+2026-05-04 12:12:37,744 | INFO | smart_alarm | Motion ended
+2026-05-04 12:12:41,258 | INFO | smart_alarm | Motion detected
+2026-05-04 12:12:44,771 | INFO | smart_alarm | Motion ended
+2026-05-04 12:12:46,277 | INFO | smart_alarm | Motion detected
+2026-05-04 12:12:49,798 | INFO | smart_alarm | Motion ended
+2026-05-04 12:12:51,825 | INFO | smart_alarm | Motion detected
+2026-05-04 12:13:13,722 | INFO | smart_alarm | Front door opened
+2026-05-04 12:13:14,280 | INFO | smart_alarm | Front door closed
+2026-05-04 12:13:14,888 | INFO | smart_alarm | Motion ended
+2026-05-04 12:13:19,923 | INFO | smart_alarm | Motion detected
+2026-05-04 12:13:23,434 | INFO | smart_alarm | Motion ended
+2026-05-04 12:13:27,946 | INFO | smart_alarm | Motion detected
+2026-05-04 12:13:32,478 | INFO | smart_alarm | Front door opened
+2026-05-04 12:13:35,463 | INFO | smart_alarm | Motion ended
+2026-05-04 12:13:37,694 | INFO | smart_alarm | Front door closed
+2026-05-04 12:13:41,478 | INFO | smart_alarm | Motion detected
+2026-05-04 12:13:43,757 | INFO | smart_alarm | Front door opened
+2026-05-04 12:13:49,472 | INFO | smart_alarm | Front door closed
+2026-05-04 12:13:50,497 | INFO | smart_alarm | Motion ended
+2026-05-04 12:13:51,939 | INFO | smart_alarm | Front door opened
+2026-05-04 12:13:55,532 | INFO | smart_alarm | Motion detected
+2026-05-04 12:13:56,096 | INFO | smart_alarm | Front door closed
+2026-05-04 12:14:02,353 | INFO | smart_alarm | Front door opened
+2026-05-04 12:14:02,549 | INFO | smart_alarm | Motion ended
+2026-05-04 12:14:10,361 | INFO | smart_alarm | Front door closed
+2026-05-04 12:14:15,075 | INFO | smart_alarm | Motion detected
+2026-05-04 12:14:34,119 | INFO | smart_alarm | Motion ended
+2026-05-04 12:14:37,507 | INFO | smart_alarm | Front door opened
+2026-05-04 12:14:38,131 | INFO | smart_alarm | Motion detected
+2026-05-04 12:14:43,656 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 12:14:43,662 | INFO | smart_alarm | Backend stopped
+2026-05-04 12:18:24,485 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-04 12:18:24,767 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 12:18:24,778 | INFO | smart_alarm | Motion detected
+2026-05-04 12:18:24,784 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 12:18:24,874 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 12:18:24,888 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 12:18:30,210 | INFO | smart_alarm | System armed
+2026-05-04 12:18:30,308 | INFO | smart_alarm | Motion ended
+2026-05-04 12:18:33,819 | INFO | smart_alarm | Motion detected
+2026-05-04 12:18:33,836 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:18:38,853 | INFO | smart_alarm | Motion ended
+2026-05-04 12:18:45,399 | INFO | smart_alarm | Motion detected
+2026-05-04 12:18:45,406 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:18:50,431 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 12:18:50,435 | INFO | smart_alarm | Backend stopped
+2026-05-04 12:26:04,112 | INFO | smart_alarm | Camera started successfully
+2026-05-04 12:26:04,891 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 12:26:04,933 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 12:26:04,945 | WARNING | smart_alarm | PIR read skipped due to gpiozero deque race
+2026-05-04 12:26:05,250 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 12:26:05,298 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 12:26:05,545 | INFO | smart_alarm | Motion detected
+2026-05-04 12:26:09,111 | INFO | smart_alarm | Motion ended
+2026-05-04 12:26:14,643 | INFO | smart_alarm | Motion detected
+2026-05-04 12:26:15,612 | INFO | smart_alarm | System armed
+2026-05-04 12:26:34,635 | INFO | smart_alarm | Front door opened
+2026-05-04 12:26:34,694 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-04 12:26:47,831 | INFO | smart_alarm | Motion ended
+2026-05-04 12:26:50,389 | INFO | smart_alarm | Motion detected
+2026-05-04 12:26:50,432 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:27:00,356 | INFO | smart_alarm | Front door closed
+2026-05-04 12:27:13,621 | INFO | smart_alarm | Motion ended
+2026-05-04 12:27:15,795 | INFO | smart_alarm | Motion detected
+2026-05-04 12:27:15,856 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:27:19,314 | INFO | smart_alarm | Motion ended
+2026-05-04 12:27:23,616 | INFO | smart_alarm | Motion detected
+2026-05-04 12:27:23,644 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:27:30,609 | INFO | smart_alarm | Motion ended
+2026-05-04 12:27:33,597 | INFO | smart_alarm | Motion detected
+2026-05-04 12:27:33,810 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:27:40,674 | INFO | smart_alarm | Motion ended
+2026-05-04 12:27:42,505 | INFO | smart_alarm | Motion detected
+2026-05-04 12:27:42,527 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:27:54,769 | INFO | smart_alarm | Alarm reset
+2026-05-04 12:28:37,148 | INFO | smart_alarm | Motion ended
+2026-05-04 12:28:41,773 | INFO | smart_alarm | Motion detected
+2026-05-04 12:28:41,813 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:28:46,334 | INFO | smart_alarm | System disarmed
+2026-05-04 12:28:48,876 | INFO | smart_alarm | Motion ended
+2026-05-04 12:28:51,477 | INFO | smart_alarm | Motion detected
+2026-05-04 12:28:59,145 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:03,256 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:06,868 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:08,951 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:12,550 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:14,664 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:20,764 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:23,349 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:27,935 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:33,542 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:44,176 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:47,207 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:50,759 | INFO | smart_alarm | Motion ended
+2026-05-04 12:29:55,857 | INFO | smart_alarm | Motion detected
+2026-05-04 12:29:58,934 | INFO | smart_alarm | Motion ended
+2026-05-04 12:30:03,037 | INFO | smart_alarm | Motion detected
+2026-05-04 12:30:17,284 | INFO | smart_alarm | Motion ended
+2026-05-04 12:30:19,846 | INFO | smart_alarm | Motion detected
+2026-05-04 12:30:21,931 | INFO | smart_alarm | System armed
+2026-05-04 12:30:44,520 | INFO | smart_alarm | System disarmed
+2026-05-04 12:30:52,825 | INFO | smart_alarm | Motion ended
+2026-05-04 12:30:54,907 | INFO | smart_alarm | Motion detected
+2026-05-04 12:31:00,536 | INFO | smart_alarm | Motion ended
+2026-05-04 12:31:04,606 | INFO | smart_alarm | Motion detected
+2026-05-04 12:31:11,776 | INFO | smart_alarm | Motion ended
+2026-05-04 12:31:15,881 | INFO | smart_alarm | Motion detected
+2026-05-04 12:31:27,155 | INFO | smart_alarm | Motion ended
+2026-05-04 12:31:31,720 | INFO | smart_alarm | Motion detected
+2026-05-04 12:31:35,272 | INFO | smart_alarm | Motion ended
+2026-05-04 12:31:37,808 | INFO | smart_alarm | Motion detected
+2026-05-04 12:31:54,634 | INFO | smart_alarm | Motion ended
+2026-05-04 12:31:58,188 | INFO | smart_alarm | Motion detected
+2026-05-04 12:32:05,311 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 12:32:05,331 | INFO | smart_alarm | Backend stopped
+2026-05-04 12:43:23,091 | INFO | smart_alarm | Camera started successfully
+2026-05-04 12:43:23,944 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 12:43:23,980 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 12:43:24,314 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 12:43:24,318 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 12:43:29,054 | INFO | smart_alarm | Motion detected
+2026-05-04 12:43:34,630 | INFO | smart_alarm | Motion ended
+2026-05-04 12:43:40,174 | INFO | smart_alarm | Motion detected
+2026-05-04 12:43:46,832 | INFO | smart_alarm | Front door opened
+2026-05-04 12:43:54,245 | INFO | smart_alarm | Front door closed
+2026-05-04 12:44:07,102 | INFO | smart_alarm | Motion ended
+2026-05-04 12:44:09,654 | INFO | smart_alarm | Motion detected
+2026-05-04 12:44:18,275 | INFO | smart_alarm | Motion ended
+2026-05-04 12:44:21,819 | INFO | smart_alarm | Motion detected
+2026-05-04 12:44:22,671 | INFO | smart_alarm | Front door opened
+2026-05-04 12:44:27,446 | INFO | smart_alarm | Motion ended
+2026-05-04 12:44:31,022 | INFO | smart_alarm | Motion detected
+2026-05-04 12:44:40,672 | INFO | smart_alarm | Motion ended
+2026-05-04 12:44:42,703 | INFO | smart_alarm | Motion detected
+2026-05-04 12:44:54,082 | INFO | smart_alarm | Front door closed
+2026-05-04 12:44:59,928 | INFO | smart_alarm | Motion ended
+2026-05-04 12:45:14,197 | INFO | smart_alarm | Motion detected
+2026-05-04 12:45:19,772 | INFO | smart_alarm | Motion ended
+2026-05-04 12:45:38,542 | INFO | smart_alarm | Motion detected
+2026-05-04 12:46:37,087 | INFO | smart_alarm | Motion ended
+2026-05-04 12:46:39,128 | INFO | smart_alarm | Motion detected
+2026-05-04 12:46:43,187 | INFO | smart_alarm | Front door opened
+2026-05-04 12:47:04,555 | INFO | smart_alarm | Motion ended
+2026-05-04 12:47:10,718 | INFO | smart_alarm | Motion detected
+2026-05-04 12:47:14,310 | INFO | smart_alarm | Motion ended
+2026-05-04 12:47:18,910 | INFO | smart_alarm | Motion detected
+2026-05-04 12:47:30,354 | INFO | smart_alarm | Front door closed
+2026-05-04 12:47:39,278 | INFO | smart_alarm | Motion ended
+2026-05-04 12:47:42,334 | INFO | smart_alarm | Motion detected
+2026-05-04 12:47:46,916 | INFO | smart_alarm | Motion ended
+2026-05-04 12:47:49,950 | INFO | smart_alarm | Motion detected
+2026-05-04 12:47:52,731 | INFO | smart_alarm | Front door opened
+2026-05-04 12:48:02,716 | INFO | smart_alarm | Motion ended
+2026-05-04 12:48:07,829 | INFO | smart_alarm | Motion detected
+2026-05-04 12:48:14,570 | INFO | smart_alarm | Front door closed
+2026-05-04 12:48:52,557 | INFO | smart_alarm | Motion ended
+2026-05-04 12:48:55,625 | INFO | smart_alarm | Motion detected
+2026-05-04 12:48:59,895 | INFO | smart_alarm | System armed
+2026-05-04 12:49:05,598 | INFO | smart_alarm | Front door opened
+2026-05-04 12:49:05,669 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-04 12:49:07,866 | INFO | smart_alarm | Motion ended
+2026-05-04 12:49:15,806 | INFO | smart_alarm | Motion detected
+2026-05-04 12:49:15,849 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:49:20,145 | INFO | smart_alarm | System disarmed
+2026-05-04 12:49:21,494 | INFO | smart_alarm | Front door closed
+2026-05-04 12:49:24,194 | INFO | smart_alarm | Motion ended
+2026-05-04 12:49:30,370 | INFO | smart_alarm | Motion detected
+2026-05-04 12:49:33,930 | INFO | smart_alarm | Motion ended
+2026-05-04 12:49:40,544 | INFO | smart_alarm | Motion detected
+2026-05-04 12:49:46,683 | INFO | smart_alarm | Motion ended
+2026-05-04 12:49:49,773 | INFO | smart_alarm | Motion detected
+2026-05-04 12:49:53,359 | INFO | smart_alarm | Motion ended
+2026-05-04 12:49:56,419 | INFO | smart_alarm | Motion detected
+2026-05-04 12:49:59,989 | INFO | smart_alarm | Motion ended
+2026-05-04 12:50:09,885 | INFO | smart_alarm | System armed
+2026-05-04 12:50:11,634 | INFO | smart_alarm | Motion detected
+2026-05-04 12:50:11,668 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:50:14,360 | INFO | smart_alarm | System disarmed
+2026-05-04 12:50:15,427 | INFO | smart_alarm | Motion ended
+2026-05-04 12:50:18,460 | INFO | smart_alarm | Motion detected
+2026-05-04 12:50:34,712 | INFO | smart_alarm | Motion ended
+2026-05-04 12:50:36,967 | INFO | smart_alarm | System armed
+2026-05-04 12:50:44,407 | INFO | smart_alarm | Motion detected
+2026-05-04 12:50:44,436 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:50:47,526 | INFO | smart_alarm | Motion ended
+2026-05-04 12:50:47,624 | INFO | smart_alarm | System disarmed
+2026-05-04 12:50:58,169 | INFO | smart_alarm | System armed
+2026-05-04 12:51:00,817 | INFO | smart_alarm | Front door opened
+2026-05-04 12:51:00,892 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-04 12:51:10,756 | INFO | smart_alarm | Alarm reset
+2026-05-04 12:51:13,458 | INFO | smart_alarm | Motion detected
+2026-05-04 12:51:13,516 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:51:15,538 | INFO | smart_alarm | System disarmed
+2026-05-04 12:51:16,803 | INFO | smart_alarm | Front door closed
+2026-05-04 12:51:17,124 | INFO | smart_alarm | Motion ended
+2026-05-04 12:51:24,060 | INFO | smart_alarm | System armed
+2026-05-04 12:51:27,238 | INFO | smart_alarm | Front door opened
+2026-05-04 12:51:27,289 | WARNING | smart_alarm | Alarm triggered by front door
+2026-05-04 12:51:41,625 | INFO | smart_alarm | Motion detected
+2026-05-04 12:51:41,651 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:51:56,217 | INFO | smart_alarm | Motion ended
+2026-05-04 12:51:59,075 | INFO | smart_alarm | Motion detected
+2026-05-04 12:51:59,116 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:52:02,596 | INFO | smart_alarm | Motion ended
+2026-05-04 12:52:09,473 | INFO | smart_alarm | Motion detected
+2026-05-04 12:52:09,506 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:52:14,996 | INFO | smart_alarm | Motion ended
+2026-05-04 12:52:19,818 | INFO | smart_alarm | Motion detected
+2026-05-04 12:52:19,871 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 12:52:22,917 | INFO | smart_alarm | Motion ended
+2026-05-04 12:52:27,028 | INFO | smart_alarm | Motion detected
+2026-05-04 12:52:27,052 | WARNING | smart_alarm | Alarm triggered by PIR motion
+                                                                                                                                         2026-05-04 14:19:51,399 | INFO | smart_alarm | Camera started successfully
+2026-05-04 14:19:52,186 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 14:19:52,223 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 14:19:52,623 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 14:19:52,625 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 14:19:54,239 | INFO | smart_alarm | Motion detected
+2026-05-04 14:20:00,340 | INFO | smart_alarm | Motion ended
+2026-05-04 14:20:01,205 | INFO | smart_alarm | System armed
+2026-05-04 14:20:04,917 | INFO | smart_alarm | Motion detected
+2026-05-04 14:20:04,988 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 14:20:14,979 | INFO | smart_alarm | Motion ended
+2026-05-04 14:20:19,619 | INFO | smart_alarm | Motion detected
+2026-05-04 14:20:19,657 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-04 14:20:29,140 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 14:20:29,159 | INFO | smart_alarm | Backend stopped
+2026-05-04 21:40:40,623 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-04 21:40:40,781 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-04 21:40:40,789 | INFO | smart_alarm | PirAlarmController started
+2026-05-04 21:40:40,847 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-04 21:40:40,901 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-04 21:40:47,014 | INFO | smart_alarm | Front door opened
+2026-05-04 21:40:50,031 | INFO | smart_alarm | Front door closed
+2026-05-04 21:41:00,140 | INFO | smart_alarm | Front door opened
+2026-05-04 21:41:03,568 | INFO | smart_alarm | Front door closed
+2026-05-04 21:41:11,253 | INFO | smart_alarm | Front door opened
+2026-05-04 21:41:12,142 | INFO | smart_alarm | Front door closed
+2026-05-04 21:41:51,475 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-04 21:41:51,480 | INFO | smart_alarm | Backend stopped
+2026-05-05 10:32:35,167 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 10:32:35,590 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 10:32:35,609 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 10:32:35,717 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 10:32:35,847 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 10:35:20,538 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 10:35:20,553 | INFO | smart_alarm | Backend stopped
+2026-05-05 10:35:48,208 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 10:35:48,530 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 10:35:48,541 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 10:35:48,633 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 10:35:48,640 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 10:43:36,794 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 10:43:36,801 | INFO | smart_alarm | Backend stopped
+2026-05-05 10:46:50,091 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 10:46:50,406 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 10:46:50,423 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 10:46:50,521 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 10:46:50,523 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 10:47:12,985 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 10:47:12,988 | INFO | smart_alarm | Backend stopped
+2026-05-05 12:09:29,735 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 12:09:30,063 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 12:09:30,079 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 12:09:30,180 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 12:09:30,270 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 12:09:35,159 | INFO | smart_alarm | Front door opened
+2026-05-05 12:09:36,531 | INFO | smart_alarm | Front door closed
+2026-05-05 12:09:47,920 | INFO | smart_alarm | Front door opened
+2026-05-05 12:09:49,038 | INFO | smart_alarm | Front door closed
+2026-05-05 12:09:54,380 | INFO | smart_alarm | Front door opened
+2026-05-05 12:09:56,207 | INFO | smart_alarm | Front door closed
+2026-05-05 12:09:59,041 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:00,764 | INFO | smart_alarm | Front door closed
+2026-05-05 12:10:02,902 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:02,966 | INFO | smart_alarm | Front door closed
+2026-05-05 12:10:05,469 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:05,561 | INFO | smart_alarm | Front door closed
+2026-05-05 12:10:08,926 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:09,023 | INFO | smart_alarm | Front door closed
+2026-05-05 12:10:12,843 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:14,690 | INFO | smart_alarm | Front door closed
+2026-05-05 12:10:22,407 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:22,678 | INFO | smart_alarm | Front door closed
+2026-05-05 12:10:25,460 | INFO | smart_alarm | Front door opened
+2026-05-05 12:10:36,782 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 12:10:36,785 | INFO | smart_alarm | Backend stopped
+2026-05-05 12:37:08,715 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 12:37:09,056 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 12:37:09,078 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 12:37:09,178 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 12:37:09,271 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 12:37:29,683 | INFO | smart_alarm | System armed
+2026-05-05 12:37:43,914 | INFO | smart_alarm | System disarmed
+2026-05-05 12:37:50,457 | INFO | smart_alarm | System disarmed
+2026-05-05 12:38:01,393 | INFO | smart_alarm | Front door opened
+2026-05-05 12:38:01,920 | INFO | smart_alarm | Front door closed
+2026-05-05 12:38:02,521 | INFO | smart_alarm | Front door opened
+2026-05-05 12:38:08,573 | INFO | smart_alarm | Front door closed
+2026-05-05 12:38:09,555 | INFO | smart_alarm | Front door opened
+2026-05-05 12:38:09,690 | INFO | smart_alarm | Front door closed
+2026-05-05 12:38:12,905 | INFO | smart_alarm | Front door opened
+2026-05-05 12:38:13,245 | INFO | smart_alarm | Front door closed
+2026-05-05 12:38:18,767 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 12:38:18,778 | INFO | smart_alarm | Backend stopped
+2026-05-05 12:49:54,712 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 12:49:55,004 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 12:49:55,021 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 12:49:55,103 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 12:49:55,106 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 12:51:23,770 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 12:51:23,773 | INFO | smart_alarm | Backend stopped
+2026-05-05 12:56:21,168 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 12:56:21,638 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 12:56:21,668 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 12:56:21,806 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 12:56:21,824 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 13:01:21,216 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 13:01:21,535 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 13:01:21,551 | INFO | smart_alarm | Motion detected
+2026-05-05 13:01:21,561 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 13:01:21,682 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 13:01:21,763 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 13:01:35,104 | INFO | smart_alarm | Motion ended
+2026-05-05 13:01:38,114 | INFO | smart_alarm | Motion detected
+2026-05-05 13:01:43,631 | INFO | smart_alarm | Motion ended
+2026-05-05 13:02:00,201 | INFO | smart_alarm | Motion detected
+2026-05-05 13:02:08,228 | INFO | smart_alarm | Motion ended
+2026-05-05 13:02:30,587 | INFO | smart_alarm | System armed
+2026-05-05 13:02:35,805 | INFO | smart_alarm | Motion detected
+2026-05-05 13:02:35,824 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-05 13:02:40,232 | INFO | smart_alarm | System disarmed
+2026-05-05 13:02:40,861 | INFO | smart_alarm | Motion ended
+2026-05-05 13:02:45,372 | INFO | smart_alarm | Motion detected
+2026-05-05 13:02:55,906 | INFO | smart_alarm | Motion ended
+2026-05-05 13:02:57,905 | INFO | smart_alarm | Front door opened
+2026-05-05 13:03:02,208 | INFO | smart_alarm | Front door closed
+2026-05-05 13:03:02,429 | INFO | smart_alarm | Motion detected
+2026-05-05 13:03:05,948 | INFO | smart_alarm | Motion ended
+2026-05-05 13:03:11,963 | INFO | smart_alarm | Motion detected
+2026-05-05 13:03:15,479 | INFO | smart_alarm | Motion ended
+2026-05-05 13:04:06,598 | INFO | smart_alarm | Motion detected
+2026-05-05 13:04:18,138 | INFO | smart_alarm | Motion ended
+2026-05-05 13:04:23,653 | INFO | smart_alarm | Motion detected
+2026-05-05 13:04:26,662 | INFO | smart_alarm | Motion ended
+2026-05-05 13:04:34,183 | INFO | smart_alarm | Motion detected
+2026-05-05 13:04:37,699 | INFO | smart_alarm | Motion ended
+2026-05-05 13:04:52,243 | INFO | smart_alarm | Motion detected
+2026-05-05 13:04:56,309 | INFO | smart_alarm | System armed
+2026-05-05 13:04:57,257 | INFO | smart_alarm | Motion ended
+2026-05-05 13:04:59,269 | INFO | smart_alarm | Motion detected
+2026-05-05 13:04:59,285 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-05 13:05:00,923 | INFO | smart_alarm | System disarmed
+2026-05-05 13:05:02,273 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:02,395 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:02,401 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:02,552 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:03,157 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:03,695 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:03,800 | INFO | smart_alarm | Motion ended
+2026-05-05 13:05:05,813 | INFO | smart_alarm | Motion detected
+2026-05-05 13:05:08,336 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:09,835 | INFO | smart_alarm | Motion ended
+2026-05-05 13:05:12,063 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:15,349 | INFO | smart_alarm | Motion detected
+2026-05-05 13:05:15,539 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:16,951 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:20,266 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:20,597 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:20,945 | INFO | smart_alarm | Front door opened
+2026-05-05 13:05:22,105 | INFO | smart_alarm | Front door closed
+2026-05-05 13:05:28,882 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 13:05:28,891 | INFO | smart_alarm | Backend stopped
+2026-05-05 13:07:56,661 | ERROR | smart_alarm | Camera failed to start: list index out of range
+2026-05-05 13:07:56,991 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 13:07:56,998 | INFO | smart_alarm | Motion detected
+2026-05-05 13:07:56,998 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 13:07:57,104 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 13:07:57,111 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 13:08:04,030 | INFO | smart_alarm | Motion ended
+2026-05-05 13:08:04,179 | INFO | smart_alarm | System armed
+2026-05-05 13:08:14,095 | INFO | smart_alarm | Motion detected
+2026-05-05 13:08:14,112 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-05 13:08:18,139 | INFO | smart_alarm | Motion ended
+2026-05-05 13:08:22,175 | INFO | smart_alarm | Motion detected
+2026-05-05 13:08:22,187 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-05 13:08:27,442 | INFO | smart_alarm | System disarmed
+2026-05-05 13:08:28,726 | INFO | smart_alarm | Motion ended
+2026-05-05 13:08:45,781 | INFO | smart_alarm | Motion detected
+2026-05-05 13:08:49,319 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 13:08:49,328 | INFO | smart_alarm | Backend stopped
+2026-05-05 13:20:53,971 | INFO | smart_alarm | Camera started successfully
+2026-05-05 13:20:54,860 | INFO | smart_alarm | Starting backend on 0.0.0.0:5000
+2026-05-05 13:20:54,895 | INFO | smart_alarm | PirAlarmController started
+2026-05-05 13:20:55,306 | INFO | smart_alarm | ZigbeeDoorListener started
+2026-05-05 13:20:55,398 | INFO | smart_alarm | MQTT connected with code 0
+2026-05-05 13:20:56,421 | INFO | smart_alarm | Motion detected
+2026-05-05 13:20:59,009 | INFO | smart_alarm | Motion ended
+2026-05-05 13:21:01,622 | INFO | smart_alarm | Motion detected
+2026-05-05 13:21:03,688 | INFO | smart_alarm | System armed
+2026-05-05 13:21:06,237 | INFO | smart_alarm | Motion ended
+2026-05-05 13:21:11,884 | INFO | smart_alarm | Motion detected
+2026-05-05 13:21:11,936 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-05 13:21:22,831 | INFO | smart_alarm | Motion ended
+2026-05-05 13:21:26,332 | INFO | smart_alarm | Motion detected
+2026-05-05 13:21:26,373 | WARNING | smart_alarm | Alarm triggered by PIR motion
+2026-05-05 13:21:32,121 | INFO | smart_alarm | System disarmed
+2026-05-05 13:21:32,985 | INFO | smart_alarm | Motion ended
+2026-05-05 13:21:35,555 | INFO | smart_alarm | Motion detected
+2026-05-05 13:21:41,665 | INFO | smart_alarm | Motion ended
+2026-05-05 13:21:54,934 | INFO | smart_alarm | Motion detected
+2026-05-05 13:22:15,345 | INFO | smart_alarm | Motion ended
+2026-05-05 13:22:17,417 | INFO | smart_alarm | Motion detected
+2026-05-05 13:22:17,960 | INFO | smart_alarm | PirAlarmController stopped
+2026-05-05 13:22:17,989 | INFO | smart_alarm | Backend stopped
